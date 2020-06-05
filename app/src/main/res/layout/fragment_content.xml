@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                                                   xmlns:app="http://schemas.android.com/apk/res-auto"
+                                                   xmlns:tools="http://schemas.android.com/tools"
+                                                   android:layout_width="match_parent"
+                                                   android:layout_height="match_parent"
+                                                   tools:context=".ContentFragment" android:id="@+id/frameLayout"
+                                                   android:background="#ffcccccc">
+    <TextView
+            android:text="대기중"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/activityText"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="16dp"
+            android:layout_marginStart="16dp"/>
+    <Button
+            android:text="확인"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" android:id="@+id/confirmButton"
+            app:layout_constraintTop_toBottomOf="@+id/activityText" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="16dp" android:layout_marginStart="16dp"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
